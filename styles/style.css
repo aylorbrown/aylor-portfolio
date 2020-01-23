@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box; 
+}
+
+
+body {
+    font-size: 36px;
+    line-height: 1.25; 
+
+    background-color: white; 
+    color: black;
+}
+
+header {
+    position: fixed; 
+    font-size: 14px;
+    top: 36;
+    left: 36;
+    z-index: 1;
+    
+    display: flex; 
+    justify-content: space-between;
+    width: 100%;
+}
+
+h1 {
+    padding: 10px;
+}
+
+section {
+    background-color: #fad9ce;
+    color: #ff0000;
+    min-height: 100vh;
+    padding: 80px;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
