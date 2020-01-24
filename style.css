@@ -1,0 +1,418 @@
+
+* {
+    box-sizing: border-box; 
+}
+
+@font-face { 
+    font-family: "Young Serif"; 
+    src: url(type/YoungSerif-Regular.woff2), url(type/YoungSerif-Regular.woff);
+}
+
+
+
+body {
+    font-family: "Young Serif";
+    font-size: 36px;
+    line-height: 1.25; 
+
+    background-color: white; 
+    color: black;
+}
+
+header {
+    position: fixed; 
+    font-size: 14px;
+    top: 36;
+    left: 36;
+    z-index: 1;
+    
+    display: flex; 
+    justify-content: space-between;
+    width: 100%;
+}
+
+header a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+section {
+    background-color: #fad9ce;
+    color: #ff0000;
+    min-height: 100vh;
+    padding: 80px;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+h1.aylor {
+    width: 800px;
+}
+
+
+
+
+
+
+container.skills {
+    display: flex; 
+    align-items: center;
+    margin-left: 20px;
+}
+
+p.javascript {
+    font-size: 18px;
+    color: black;
+    background-color:#99a92c;
+
+    border: 1px solid black;
+    padding: 10px;
+    width: 125px;
+    margin-left: 20px;
+
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+p.react {
+    font-size: 18px;
+    color: black;
+    background-color: #fdf1d9;
+
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 20px;
+    width: 125px;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+p.node {
+    font-size: 18px;
+    color: black;
+    background-color: #efbab3;
+
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 20px;
+    width: 125px;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+p.sql {
+    font-size: 18px;
+    color: black;
+    background-color: #fc9965;
+
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 20px;
+    width: 125px;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+p.html {
+    font-size: 18px;
+    color: black;
+    background-color: #fff59e;
+
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 20px;
+    width: 125px;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+p.css {
+    font-size: 18px;
+    color: black;
+    background-color: #bae7dd;
+
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 20px;
+    width: 125px;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+p.git {
+    font-size: 18px;
+    color: black;
+    background-color: #fe892a;
+
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 20px;
+    width: 125px;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+p.github {
+    font-size: 18px;
+    color: black;
+    background-color: #c3a55c;
+
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 20px;
+    width: 125px;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+p.aws {
+    font-size: 18px;
+    color: black;
+    background-color: #a6ff47;
+
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 20px;
+    width: 125px;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+p.python {
+    font-size: 18px;
+    color: black;
+    background-color: #be4624;
+
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 20px;
+    width: 125px;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+p.photo {
+    font-size: 18px;
+    color: black;
+    background-color: #c4c5d4;
+
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 20px;
+    width: 125px;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+p.xd {
+    font-size: 18px;
+    color: black;
+    background-color: #a6ff47;
+
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 20px;
+    width: 125px;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+container.contact {
+    display: flex; 
+    align-items: center;
+    margin-left: 20px;
+}
+
+
+a.email {
+    font-size: 18px;
+    color: black;
+    background-color: #fdf1d9;
+
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 20px;
+    width: 125px;
+    text-decoration: none;
+    cursor: pointer;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+a.github {
+    font-size: 18px;
+    color: black;
+    background-color: #c3a55c;
+
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 20px;
+    width: 125px;
+    text-decoration: none;
+    cursor: pointer;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+a.linkedin {
+    font-size: 18px;
+    color: black;
+    background-color: #c3a55c;
+
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 20px;
+    width: 125px;
+    text-decoration: none;
+    cursor: pointer;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+a.arena {
+    font-size: 18px;
+    color: black;
+    background-color: #c3a55c;
+
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 20px;
+    width: 125px;
+    text-decoration: none;
+    cursor: pointer;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+section.container  {
+    display: table; 
+    width: 100%; 
+}
+
+div.left-half { 
+    background-color: #c3a55c; 
+    position: absolute; 
+    left: 0px;
+    width: 50%;
+    min-height: 100vh;
+}
+
+div.left-half h1 {
+    color: black; 
+    padding: 60px;
+}
+
+div.right-half { 
+    background-color: #c0b490; 
+    position: absolute; 
+    right: 0px;
+    width: 50%;
+    min-height: 100vh;
+
+}
+
+
+div.left-half-2 {
+    background-color: #c0b490; 
+    position: absolute; 
+    left: 0px;
+    width: 50%;
+    min-height: 100vh;
+
+}
+
+div.right-half-2 { 
+    background-color: #f2ad78; 
+    position: absolute; 
+    right: 0px;
+    width: 50%;
+    min-height: 100vh;
+
+}
+
+
+
+
+section.s4 {
+    background-color: #b4a671;
+
+}
+
+
+
+/* about page  */
+
+
+section.container-about {
+    background-color: white;
+    display: table; 
+    width: 100%; 
+}
+
+
+div.left-half-about {
+    background-color: white;
+    position: absolute; 
+    left: 0px;
+    width: 50%;
+    min-height: 100vh;
+}
+
+div.left-half-about h1 {
+    color: black; 
+}
+
+div.right-half-about {
+    background-color: white;
+    position: absolute; 
+    right: 0px;
+    width: 50%;
+    min-height: 100vh;
+}
+
+div.right-half-about h1 {
+    color: black; 
+}
