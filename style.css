@@ -54,7 +54,47 @@ h1.aylor {
     width: 800px;
 }
 
+p {
+    font-size: 18px;
+    color: black;
+}
 
+section.project-content {
+    background-color: white;
+    color: black;
+    min-height: 100vh; 
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+div.project-title {
+    background-color: white; 
+    position: absolute; 
+    left: 0px;
+    width: 50%;
+    min-height: 100vh;
+}
+
+div.project-about {
+    background-color: white; 
+    position: absolute; 
+    right: 0px;
+    width: 50%;
+    min-height: 100vh;
+}
+
+
+
+container.about {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+
+    width: 75%;
+    margin-left: 75px;
+}
 
 
 
