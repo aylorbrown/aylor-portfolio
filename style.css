@@ -9,7 +9,6 @@
 }
 
 
-
 body {
     font-family: "Young Serif";
     font-size: 36px;
@@ -59,6 +58,71 @@ p {
     color: black;
 }
 
+p::selection {
+    background-color: #def626;
+    color: black;
+}
+
+
+/* home page  */
+
+section.container  {
+    display: table; 
+    width: 100%; 
+}
+
+div.left-half { 
+    background-color: #c3a55c; 
+    position: absolute; 
+    left: 0px;
+    width: 50%;
+    min-height: 100vh;
+}
+
+div.left-half h1 {
+    color: black; 
+    padding: 60px;
+}
+
+div.right-half { 
+    background-color: white; 
+    position: absolute; 
+    right: 0px;
+    width: 50%;
+    min-height: 100vh;
+
+}
+
+
+div.left-half-2 {
+    background-color: white; 
+    position: absolute; 
+    left: 0px;
+    width: 50%;
+    min-height: 100vh;
+}
+
+div.right-half-2 { 
+    background-color: #f2ad78; 
+    position: absolute; 
+    right: 0px;
+    width: 50%;
+    min-height: 100vh;
+}
+
+div.right-half-2 h1 {
+    /* color: #dbdbdb; */
+    color: black;
+    padding: 60px;
+
+}
+
+section.s4 {
+    background-color: #b4a671;
+}
+
+/* project pages  */
+
 section.project-content {
     background-color: white;
     color: black;
@@ -67,6 +131,8 @@ section.project-content {
     display: flex;
     justify-content: left;
     align-items: center;
+
+    border: 1px solid black;
 }
 
 div.project-title {
@@ -77,6 +143,26 @@ div.project-title {
     min-height: 100vh;
 }
 
+div.project-title button {
+    /* background-color: #def626; */
+    border: 1px solid black;
+    margin-left: 20px;
+}
+
+div.project-title a {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+
+    padding: 10px;
+    width: 125px;
+}
+
 div.project-about {
     background-color: white; 
     position: absolute; 
@@ -85,8 +171,47 @@ div.project-about {
     min-height: 100vh;
 }
 
+/* about page */
+
+section.container-about {
+    background-color: white;
+    display: table; 
+    width: 100%; 
+}
 
 
+div.left-half-about {
+    background-color: white;
+    position: absolute; 
+    left: 0px;
+    width: 50%;
+    min-height: 100vh;
+}
+
+div.left-half-about h1 {
+    color: black; 
+    font-size: 36px;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+div.right-half-about {
+    background-color: white;
+    position: absolute; 
+    right: 0px;
+    width: 50%;
+    min-height: 100vh;
+}
+
+div.right-half-about h1 {
+    color: black; 
+}
+
+/* about  */
 container.about {
     display: flex; 
     align-items: center;
@@ -96,13 +221,18 @@ container.about {
     margin-left: 75px;
 }
 
+container.about p {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
 
-
-
+/* about skills */
 container.skills {
     display: flex; 
     align-items: center;
-    margin-left: 20px;
+    justify-content: center;
+
 }
 
 p.javascript {
@@ -274,7 +404,7 @@ p.photo {
 p.xd {
     font-size: 18px;
     color: black;
-    background-color: #a6ff47;
+    background-color: #def626;
 
     border: 1px solid black;
     padding: 10px;
@@ -288,10 +418,12 @@ p.xd {
 
 
 
+/* about contact */
+
 container.contact {
     display: flex; 
     align-items: center;
-    margin-left: 20px;
+    justify-content: center;
 }
 
 
@@ -315,7 +447,7 @@ a.email {
 a.github {
     font-size: 18px;
     color: black;
-    background-color: #c3a55c;
+    background-color: #19b00c;
 
     border: 1px solid black;
     padding: 10px;
@@ -361,98 +493,4 @@ a.arena {
     display: flex; 
     align-items: center;
     justify-content: center;
-}
-
-
-
-
-
-section.container  {
-    display: table; 
-    width: 100%; 
-}
-
-div.left-half { 
-    background-color: #c3a55c; 
-    position: absolute; 
-    left: 0px;
-    width: 50%;
-    min-height: 100vh;
-}
-
-div.left-half h1 {
-    color: black; 
-    padding: 60px;
-}
-
-div.right-half { 
-    background-color: #c0b490; 
-    position: absolute; 
-    right: 0px;
-    width: 50%;
-    min-height: 100vh;
-
-}
-
-
-div.left-half-2 {
-    background-color: #c0b490; 
-    position: absolute; 
-    left: 0px;
-    width: 50%;
-    min-height: 100vh;
-
-}
-
-div.right-half-2 { 
-    background-color: #f2ad78; 
-    position: absolute; 
-    right: 0px;
-    width: 50%;
-    min-height: 100vh;
-
-}
-
-
-
-
-section.s4 {
-    background-color: #b4a671;
-
-}
-
-
-
-/* about page  */
-
-
-section.container-about {
-    background-color: white;
-    display: table; 
-    width: 100%; 
-}
-
-
-div.left-half-about {
-    background-color: white;
-    position: absolute; 
-    left: 0px;
-    width: 50%;
-    min-height: 100vh;
-}
-
-div.left-half-about h1 {
-    color: black; 
-}
-
-div.right-half-about {
-    background-color: white;
-    position: absolute; 
-    right: 0px;
-    width: 50%;
-    min-height: 100vh;
-}
-
-div.right-half-about h1 {
-    color: black; 
 }
