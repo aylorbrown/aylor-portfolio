@@ -53,6 +53,10 @@ h1.aylor {
     width: 800px;
 }
 
+h1::selection {
+    background-color: #def626;
+}
+
 p {
     font-size: 18px;
     color: black;
@@ -62,6 +66,8 @@ p::selection {
     background-color: #def626;
     color: black;
 }
+
+
 
 
 /* home page  */
@@ -100,6 +106,17 @@ div.left-half-2 {
     left: 0px;
     width: 50%;
     min-height: 100vh;
+}
+
+div.left-half-2 img {
+    width: 725px;
+    height: 696px;
+    object-fit: cover;
+}
+
+.responsive {
+    max-width:100%;
+    height: auto;
 }
 
 div.right-half-2 { 
