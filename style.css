@@ -68,8 +68,6 @@ p::selection {
 }
 
 
-
-
 /* home page  */
 
 section.container  {
@@ -90,6 +88,10 @@ div.left-half h1 {
     padding: 60px;
 }
 
+div.left-half a {
+    text-decoration: none;
+}
+
 div.right-half { 
     background-color: white; 
     position: absolute; 
@@ -98,7 +100,6 @@ div.right-half {
     min-height: 100vh;
 
 }
-
 
 div.left-half-2 {
     background-color: white; 
@@ -131,7 +132,11 @@ div.right-half-2 h1 {
     /* color: #dbdbdb; */
     color: black;
     padding: 60px;
+}
 
+div.right-half-2 a {
+    text-decoration: none; 
+    cursor: pointer;
 }
 
 section.s4 {
@@ -146,27 +151,40 @@ section.project-content {
     min-height: 100vh; 
 
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
+    /* flex-direction: column; */
 
-    border: 1px solid black;
 }
 
-div.project-title {
+section.project-content-info {
+    background-color: #fdf1d9;
+    flex-direction: column;
+
+}
+
+/* div.project-title {
     background-color: white; 
     position: absolute; 
     left: 0px;
     width: 50%;
     min-height: 100vh;
-}
+} */
 
-div.project-title button {
+section.project-content-info button {
     /* background-color: #def626; */
     border: 1px solid black;
-    margin-left: 20px;
 }
 
-div.project-title a {
+div.project-buttons {
+    display: flex; 
+    flex-direction: row;
+
+    
+}
+
+
+section.project-content-info a {
     display: flex; 
     align-items: center;
     justify-content: center;
@@ -180,12 +198,41 @@ div.project-title a {
     width: 125px;
 }
 
-div.project-about {
+div.project-content-info p {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+
+    font-size: 36px;
+}
+
+/* div.project-about {
     background-color: white; 
     position: absolute; 
     right: 0px;
     width: 50%;
     min-height: 100vh;
+    margin: 0 20px 0 0;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+} */
+
+
+div.gif img {
+    width: 100%;
+    height: auto;
+}
+
+div.dan-images {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+div.dan-images img {
+    padding: 40px;
 }
 
 /* about page */
@@ -261,7 +308,6 @@ p.javascript {
     padding: 10px;
     width: 125px;
     margin-left: 20px;
-
 
     display: flex; 
     align-items: center;
