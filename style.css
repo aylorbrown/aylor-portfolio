@@ -16,6 +16,8 @@ body {
 
     background-color: white; 
     color: black;
+
+    width: 100%;
 }
 
 header {
@@ -28,6 +30,9 @@ header {
     display: flex; 
     justify-content: space-between;
     width: 100%;
+    /* max-width: 100%; */
+
+    border: 1px solid black;
 }
 
 header a {
@@ -42,7 +47,7 @@ section {
     background-color: #fad9ce;
     color: #ff0000;
     min-height: 100vh;
-    padding: 80px;
+    /* padding: 80px; */
 
     display: flex;
     justify-content: left;
@@ -71,16 +76,19 @@ p::selection {
 /* home page  */
 
 section.container  {
-    display: table; 
+    /* display: table;  */
+    display: flex;
     width: 100%; 
+    border: 1px solid black;
 }
 
 div.left-half { 
     background-color: #c3a55c; 
-    position: absolute; 
-    left: 0px;
+    /* left: 0px; */
     width: 50%;
     min-height: 100vh;
+
+    border: 1px solid black;
 }
 
 div.left-half h1 {
@@ -94,38 +102,46 @@ div.left-half a {
 
 div.right-half { 
     background-color: white; 
-    position: absolute; 
-    right: 0px;
+    /* position: absolute;  */
+    /* right: 0px; */
     width: 50%;
     min-height: 100vh;
 
+    border: 1px solid black;
 }
 
 div.left-half-2 {
     background-color: white; 
-    position: absolute; 
+    /* position: absolute;  */
     left: 0px;
     width: 50%;
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border: 1px solid black;
 }
 
+/* images has to fill but must be size of container */
 div.left-half-2 img {
-    width: 725px;
-    height: 696px;
-    object-fit: cover;
+    min-height: 100%;
+    min-width: 100%;
 }
 
-.responsive {
-    max-width:100%;
-    height: auto;
-}
+
 
 div.right-half-2 { 
     background-color: #f2ad78; 
-    position: absolute; 
+    /* position: absolute;  */
     right: 0px;
     width: 50%;
     min-height: 100vh;
+
+    border: 1px solid black;
+
 }
 
 div.right-half-2 h1 {
@@ -143,6 +159,16 @@ section.s4 {
     background-color: #b4a671;
 }
 
+.img { 
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+/* img.responsive {
+    width:100%;
+    height: auto;
+} */
+
 /* project pages  */
 
 section.project-content {
@@ -158,9 +184,56 @@ section.project-content {
 }
 
 section.project-content-info {
-    background-color: #fdf1d9;
+    background-color: white;
+    /* background-color: #fdf1d9; */
     flex-direction: column;
+}
 
+section.project-content-info h1{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    
+    color: black;
+    font-size: 36px;
+
+    margin-bottom: 40px;
+}
+
+container.buttons {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+p.demo {
+    font-size: 18px;
+    color: black;
+    background-color:#99a92c;
+
+    border: 1px solid black;
+    padding: 5px;
+    width: 100px;
+    margin-right: 10px;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+p.repo {
+    font-size: 18px;
+    color: black;
+    background-color:#99a92c;
+
+    border: 1px solid black;
+    padding: 5px;
+    width: 100px;
+    margin-left: 10px;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
 }
 
 /* div.project-title {
@@ -171,17 +244,15 @@ section.project-content-info {
     min-height: 100vh;
 } */
 
-section.project-content-info button {
+/* section.project-content-info button { */
     /* background-color: #def626; */
-    border: 1px solid black;
+    /* border: 1px solid black;
 }
 
 div.project-buttons {
     display: flex; 
-    flex-direction: row;
-
-    
-}
+    flex-direction: row; 
+} */
 
 
 section.project-content-info a {
@@ -198,12 +269,15 @@ section.project-content-info a {
     width: 125px;
 }
 
-div.project-content-info p {
+section.project-content-info p {
     display: flex; 
     align-items: center;
     justify-content: center;
+}
 
-    font-size: 36px;
+.project-text {
+    margin-top: 100px;
+    width: 900px;
 }
 
 /* div.project-about {
@@ -296,187 +370,80 @@ container.skills {
     display: flex; 
     align-items: center;
     justify-content: center;
+}
 
+p.skillbox {
+    font-size: 18px;
+    color: black;
+
+    border: 1px solid black;
+    padding: 10px;
+    width: 125px;
+    margin-left: 20px;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
 }
 
 p.javascript {
-    font-size: 18px;
-    color: black;
     background-color:#99a92c;
-
-    border: 1px solid black;
-    padding: 10px;
-    width: 125px;
-    margin-left: 20px;
-
-    display: flex; 
-    align-items: center;
-    justify-content: center;
 }
 
 p.react {
-    font-size: 18px;
-    color: black;
     background-color: #fdf1d9;
-
-    border: 1px solid black;
-    padding: 10px;
-    margin-left: 20px;
-    width: 125px;
-
-    display: flex; 
-    align-items: center;
-    justify-content: center;
 }
 
 p.node {
-    font-size: 18px;
-    color: black;
     background-color: #efbab3;
-
-    border: 1px solid black;
-    padding: 10px;
-    margin-left: 20px;
-    width: 125px;
-
-    display: flex; 
-    align-items: center;
-    justify-content: center;
 }
 
 p.sql {
-    font-size: 18px;
-    color: black;
-    background-color: #fc9965;
-
-    border: 1px solid black;
-    padding: 10px;
-    margin-left: 20px;
-    width: 125px;
-
-    display: flex; 
-    align-items: center;
-    justify-content: center;
+    background-color:#9cb29e;
 }
 
 p.html {
-    font-size: 18px;
-    color: black;
     background-color: #fff59e;
-
-    border: 1px solid black;
-    padding: 10px;
-    margin-left: 20px;
-    width: 125px;
-
-    display: flex; 
-    align-items: center;
-    justify-content: center;
 }
 
 p.css {
-    font-size: 18px;
-    color: black;
     background-color: #bae7dd;
-
-    border: 1px solid black;
-    padding: 10px;
-    margin-left: 20px;
-    width: 125px;
-
-    display: flex; 
-    align-items: center;
-    justify-content: center;
 }
 
 p.git {
-    font-size: 18px;
-    color: black;
     background-color: #fe892a;
-
-    border: 1px solid black;
-    padding: 10px;
-    margin-left: 20px;
-    width: 125px;
-
-    display: flex; 
-    align-items: center;
-    justify-content: center;
 }
 
 p.github {
-    font-size: 18px;
-    color: black;
     background-color: #c3a55c;
-
-    border: 1px solid black;
-    padding: 10px;
-    margin-left: 20px;
-    width: 125px;
-
-    display: flex; 
-    align-items: center;
-    justify-content: center;
 }
 
 p.aws {
-    font-size: 18px;
-    color: black;
-    background-color: #a6ff47;
-
-    border: 1px solid black;
-    padding: 10px;
-    margin-left: 20px;
-    width: 125px;
-
-    display: flex; 
-    align-items: center;
-    justify-content: center;
+    background-color: #fc9965;
 }
 
 p.python {
-    font-size: 18px;
-    color: black;
     background-color: #be4624;
-
-    border: 1px solid black;
-    padding: 10px;
-    margin-left: 20px;
-    width: 125px;
-
-    display: flex; 
-    align-items: center;
-    justify-content: center;
 }
 
 p.photo {
-    font-size: 18px;
-    color: black;
+    
     background-color: #c4c5d4;
 
-    border: 1px solid black;
-    padding: 10px;
-    margin-left: 20px;
-    width: 125px;
-
-    display: flex; 
-    align-items: center;
-    justify-content: center;
 }
 
 p.xd {
-    font-size: 18px;
-    color: black;
-    background-color: #def626;
+    
+    background-color: #ff616b;
 
-    border: 1px solid black;
-    padding: 10px;
-    margin-left: 20px;
-    width: 125px;
+}
 
-    display: flex; 
-    align-items: center;
-    justify-content: center;
+p.sketch {
+    background-color: #0057ba;
+}
+
+p.shopify {
+    background-color: #ebd999;
 }
 
 
@@ -493,7 +460,7 @@ container.contact {
 a.email {
     font-size: 18px;
     color: black;
-    background-color: #fdf1d9;
+    background-color: #c2975a;
 
     border: 1px solid black;
     padding: 10px;
@@ -510,7 +477,7 @@ a.email {
 a.github {
     font-size: 18px;
     color: black;
-    background-color: #19b00c;
+    background-color: #94ff94;
 
     border: 1px solid black;
     padding: 10px;
@@ -527,7 +494,7 @@ a.github {
 a.linkedin {
     font-size: 18px;
     color: black;
-    background-color: #c3a55c;
+    background-color: #d1b0b3;
 
     border: 1px solid black;
     padding: 10px;
@@ -544,7 +511,7 @@ a.linkedin {
 a.arena {
     font-size: 18px;
     color: black;
-    background-color: #c3a55c;
+    background-color: #ffb852;
 
     border: 1px solid black;
     padding: 10px;
@@ -556,4 +523,67 @@ a.arena {
     display: flex; 
     align-items: center;
     justify-content: center;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    section.container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    div.aylor-textbox {
+        display: flex; 
+        margin: 300px 0 300px 20px;
+    }
+
+    h1.aylor {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    div.left-half {
+        width: 100%;
+    }
+
+    div.left-half h1 {
+        font-size: 36px;
+        max-width: 100%;
+    }
+
+    div.right-half {
+        width: 100%;
+    }
+
+    section.dan-reads-marta-container {
+        flex-direction: column-reverse;
+    }
+
+    div.left-half-2 {
+        width: 100%;
+    }
+
+    div.right-half-2 {
+        width: 100%;
+    }
+    
+    div.right-half-2 h1 {
+        font-size: 36px;
+        max-width: 100%;
+    }
+
+    section.container-about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.left-half-about {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+   
 }
