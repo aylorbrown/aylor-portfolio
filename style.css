@@ -56,6 +56,7 @@ section {
 
 h1.aylor {
     width: 800px;
+    margin-left: 20px;
 }
 
 h1::selection {
@@ -78,7 +79,6 @@ p::selection {
 section.container  {
     display: flex;
     width: 100%; 
-    /* border: 1px solid black; */
 }
 
 div.left-half { 
@@ -86,8 +86,6 @@ div.left-half {
     /* left: 0px; */
     width: 50%;
     min-height: 100vh;
-
-    /* border: 1px solid black; */
 }
 
 div.left-half h1 {
@@ -101,17 +99,12 @@ div.left-half a {
 
 div.right-half { 
     background-color: white; 
-    /* position: absolute;  */
-    /* right: 0px; */
     width: 50%;
     min-height: 100vh;
-
-    /* border: 1px solid black; */
 }
 
 div.left-half-2 {
     background-color: white; 
-    /* position: absolute;  */
     left: 0px;
     width: 50%;
     height: 100vh;
@@ -120,8 +113,6 @@ div.left-half-2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    /* border: 1px solid black; */
 }
 
 /* images has to fill but must be size of container */
@@ -132,7 +123,6 @@ div.left-half-2 img {
 
 div.right-half-2 { 
     background-color: #f2ad78; 
-    /* position: absolute;  */
     right: 0px;
     width: 50%;
     min-height: 100vh;
@@ -173,7 +163,6 @@ section.project-content {
     justify-content: center;
     align-items: center;
     /* flex-direction: column; */
-
 }
 
 section.project-content-info {
@@ -193,7 +182,7 @@ section.project-content-info h1{
     margin-bottom: 40px;
 }
 
-container.buttons {
+div.buttons {
     display: flex; 
     align-items: center;
     justify-content: center;
@@ -290,6 +279,7 @@ section.project-content-info p {
 div.gif img {
     width: 100%;
     height: auto;
+
 }
 
 div.dan-images {
@@ -494,6 +484,7 @@ a.arena {
     h1.aylor {
         font-size: 24px;
         width: 100%;
+        margin-left: 0px;
     }
 
     div.left-half {
@@ -579,26 +570,44 @@ a.arena {
         margin-right: 10px;
     }
 
-    @media screen and (max-width: 375px) {
 
+    .project-text {
+        width: 100%;
+        margin-top: 75px;
+    }
+
+    div.dan-images {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    div.dan-images img {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+
+        width: 100%;
+        padding: 10px;
+
+        margin-bottom: 20px;
+    }
+
+    div.gif {
+        width: 100%;
+    }
+    
+    
+}
+    @media screen and (max-width: 375px) {
+    
         p.skillbox {
             margin-left: 5px;
             margin-right: 5px;
         }
-
+    
         div.left-half-about img {
             margin-top: 200px;
-            
+                
         }
-
-    }
     
-
-    
-
-   
-
-
-
-   
-}
+        }
