@@ -243,6 +243,11 @@ div.project-buttons {
     flex-direction: row; 
 } */
 
+section.project-content-info {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
 
 section.project-content-info a {
     display: flex; 
