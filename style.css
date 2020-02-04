@@ -169,12 +169,10 @@ section.project-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: column; */
 }
 
 section.project-content-info {
     background-color: white;
-    /* background-color: #fdf1d9; */
     flex-direction: column;
 }
 
@@ -225,24 +223,6 @@ p.repo {
     justify-content: center;
 }
 
-/* div.project-title {
-    background-color: white; 
-    position: absolute; 
-    left: 0px;
-    width: 50%;
-    min-height: 100vh;
-} */
-
-/* section.project-content-info button { */
-    /* background-color: #def626; */
-    /* border: 1px solid black;
-}
-
-div.project-buttons {
-    display: flex; 
-    flex-direction: row; 
-} */
-
 section.project-content-info {
     display: flex; 
     align-items: center;
@@ -274,24 +254,9 @@ section.project-content-info p {
     width: 900px;
 }
 
-/* div.project-about {
-    background-color: white; 
-    position: absolute; 
-    right: 0px;
-    width: 50%;
-    min-height: 100vh;
-    margin: 0 20px 0 0;
-
-    display: flex;
-    justify-content: left;
-    align-items: center;
-} */
-
-
 div.gif img {
     width: 100%;
     height: auto;
-
 }
 
 div.dan-images {
