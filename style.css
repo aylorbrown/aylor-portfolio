@@ -99,8 +99,14 @@ div.left-half a {
     text-decoration: none;
 }
 
+div.left-half img {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+
 div.right-half { 
-    background-color: white; 
+    background-color: #fbf591; 
     width: 50%;
     height: 100vh;
     overflow: hidden;
@@ -110,13 +116,13 @@ div.right-half {
     justify-content: center;
 }
 
-div.right-half img {
+/* div.right-half img {
     min-height: 100%;
     min-width: 100%;
-}
+} */
 
 div.left-half-2 {
-    background-color: white; 
+    background-color:white; 
     width: 50%;
     height: 100vh;
     overflow: hidden;
@@ -250,13 +256,18 @@ section.project-content-info p {
 }
 
 .project-text {
-    margin-top: 100px;
+    margin: 100px 10px 0 10px;
+    /* margin-top: 100px; */
     width: 900px;
 }
 
+
+
 div.gif img {
-    width: 100%;
+    width: 75%;
     height: auto;
+
+    
 }
 
 div.dan-images {
@@ -451,6 +462,7 @@ a.arena {
 
 @media screen and (max-width: 768px) {
 
+
     section.container {
         display: flex;
         flex-direction: column;
@@ -462,17 +474,21 @@ a.arena {
     }
 
     h1.aylor {
-        font-size: 24px;
+        font-size: 36px;
         width: 100%;
         margin-left: 0px;
     }
 
     div.left-half {
         width: 100%;
+
+        display: flex; 
+        align-items: center; 
+        justify-items: center;
     }
 
     div.left-half h1 {
-        font-size: 36px;
+        font-size: 48px;
         max-width: 100%;
     }
 
@@ -495,10 +511,14 @@ a.arena {
 
     div.right-half-2 {
         width: 100%;
+
+        display: flex; 
+        align-items: center; 
+        justify-items: center;
     }
     
     div.right-half-2 h1 {
-        font-size: 36px;
+        font-size: 48px;
         max-width: 100%;
     }
 
@@ -518,7 +538,6 @@ a.arena {
     }
 
    
-
     div.left-half-about img {
         margin-top: 150px;
         
@@ -563,9 +582,10 @@ a.arena {
 
 
     .project-text {
-        width: 100%;
+        width: 90%;
         margin-top: 75px;
-    }
+
+}    
 
     div.dan-images {
         flex-direction: column;
