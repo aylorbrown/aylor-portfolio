@@ -4,9 +4,10 @@
 ![Aylor Brown](assets/Kapture-2020-02-06-at-6.40.24.gif)
 
 ## Challenges
-I found a template that I like and reverse-engineered it, adding my own features like a sticky header and ---. 
+I found a template that I liked and reverse-engineered it, adding my own features like a sticky header. 
 
-The biggest development challenge was making the mobile site responsive and creating a div with a left and a right --. After watching a few tutorials, I made a parent section with two div children.
+The biggest development challenge was making the mobile site responsive and creating a div split in two with content on the right and left. Basically, each side takes up exactly half of the container, creating a distinct break between the one. After watching a few tutorials, I made a section parent with two div children.
+
 
 ```html
 <section class="container">
@@ -22,7 +23,7 @@ The biggest development challenge was making the mobile site responsive and crea
     </section>
 ```
 
-I originally made the CSS ```display:block``` and ```left:0``` for the left div and ```right:0``` for the right div. This solution worked but the site was in laptop mode, but broke down in mobile. I switched to flex box and took out the ```left``` and ```right``` properties:
+I originally used fake tables with ```display:table``` and ```left:0``` for the left div and ```right:0``` for the right div. This solution worked in laptop mode, but broke down in mobile. I switched to my trusty friend flexbox. I turned by parent section into a flexible box with the child containers both takling of 50% of the width. I took out the ```left``` and ```right``` properties:
 
 ```css
 section.container  {
@@ -42,10 +43,6 @@ div.right-half {
     width: 50%;
     height: 100vh;
     overflow: hidden;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 ```
 To make the images fill to the size of the container while keeping their aspect ration, I used:
@@ -61,7 +58,9 @@ voila! The site is now mobile friendly!
 
 ![Aylor Mobile](assets/aylor-mobile.png)
 
-![Solange](https://media.giphy.com/media/yFTqTLjqxIBbi/giphy.gif)
+
+Me after conquering CSS media queries:
+![Solange dancing](https://media.giphy.com/media/hR2NxZlRDqEj6/giphy.gif)
 
 
 ## What's Next
