@@ -23,7 +23,7 @@ The biggest development challenge was making the mobile site responsive and crea
     </section>
 ```
 
-I originally used fake tables with ```display:table``` and ```left:0``` for the left div and ```right:0``` for the right div. This solution worked in laptop mode, but broke down in mobile. I switched to my trusty friend flexbox. I turned by parent section into a flexible box with the child containers both takling of 50% of the width. I took out the ```left``` and ```right``` properties:
+I originally used fake tables with ```display:table``` and ```left:0``` for the left div and ```right:0``` for the right div. This solution worked in laptop mode, but broke down in mobile. I switched to my trusty friend flexbox. I turned the parent section into a flexible box with the child containers both taking up 50% of the width. I took out the ```left:0``` and ```right:0``` properties:
 
 ```css
 section.container  {
@@ -59,7 +59,7 @@ voila! The site is now mobile friendly!
 ![Aylor Mobile](assets/aylor-mobile.png)
 
 
-Me after conquering CSS media queries:
+Me after conquering CSS media queries
 ![Solange dancing](https://media.giphy.com/media/hR2NxZlRDqEj6/giphy.gif)
 
 
