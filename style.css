@@ -551,6 +551,10 @@ a.arena {
         justify-content: center;
     }
 
+    p {
+        padding: 50px;
+    }
+
    
     div.left-half-about img {
         margin-top: 150px;
