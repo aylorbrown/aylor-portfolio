@@ -22,7 +22,7 @@ The biggest development challenge was making the mobile site responsive and crea
     </section>
 ```
 
-I originally made the CSS ```display:block``` and ```left:0` for the left div and ```right:0``` for the right div. This caused problems when making the mobile site responsive so I switched to:
+I originally made the CSS ```display:block``` and ```left:0``` for the left div and ```right:0``` for the right div. This solution worked but the site was in laptop mode, but broke down in mobile. I switched to flex box and took out the ```left``` and ```right``` properties:
 
 ```css
 section.container  {
@@ -48,9 +48,20 @@ div.right-half {
     justify-content: center;
 }
 ```
+To make the images fill to the size of the container while keeping their aspect ration, I used:
 
+```css
+.img { 
+    min-width: 100%; 
+    min-height: 100%;
+}
+```
 
-I orginially made the divs ```display: block``` after seeing a tutorial to 
+voila! The site is now mobile friendly! 
+
+![Aylor Mobile](assets/aylor-mobile.png)
+
+![Solange](https://media.giphy.com/media/yFTqTLjqxIBbi/giphy.gif)
 
 
 ## What's Next
