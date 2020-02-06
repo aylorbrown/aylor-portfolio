@@ -30,7 +30,6 @@ header {
     display: flex; 
     justify-content: space-between;
     width: 100%;
-    /* max-width: 100%; */
 }
 
 header a {
@@ -449,6 +448,29 @@ a.arena {
 @media screen and (max-width: 768px) {
 
 
+    a.nav-1 {
+        position: fixed;
+        top: 50%;
+        left: 10px;
+        /* rotates text */
+        /* changes rotation POINT x axis*/
+        transform-origin: 0 0;
+        transform: rotate(-90deg) translate(-50%, 0);
+    }
+
+    a.nav-1 span {
+        display: block;
+    }
+
+    a.nav-2 {
+        position: fixed;
+        top: 50%;
+        right: 10px;
+        transform-origin:100% 0;
+        transform: rotate(90deg) translate(50%, 0);
+    }
+
+    
     section.container {
         display: flex;
         flex-direction: column;
@@ -460,9 +482,15 @@ a.arena {
     }
 
     h1.aylor {
-        font-size: 36px;
+        font-size: 48px;
         width: 100%;
-        margin-left: 0px;
+        /* margin-left: 0px; */
+
+        /* padding: 20px; */
+    }
+
+    div.aylor-textbox {
+        padding: 50px;
     }
 
     div.left-half {
@@ -536,7 +564,6 @@ a.arena {
 
     div.about {
         max-width: 100%;
-        /* margin-left: 10px; */
     }
 
     div.about p {
@@ -569,7 +596,7 @@ a.arena {
 
     .project-text {
         width: 100%;
-        padding: 10px;
+        padding: 50px;
 }   
 
     div.dan-images {
@@ -583,14 +610,14 @@ a.arena {
         justify-content: center;
 
         width: 100%;
-        padding: 20px;
+        padding: 50px;
 
         margin-bottom: 20px;
     }
 
 
     div.gif img {
-        padding: 10px; 
+        padding: 50px; 
     }
     
     
