@@ -1,12 +1,11 @@
 ### Aylor Brown Portfolio 
 
-demo gif goes here 
+
+![Aylor Brown](assets/Kapture-2020-02-06-at-6.40.24.gif)
 
 ## Challenges
 
-some code goes here 
 
-some images of mobile 
 
 ## Author 
 [Aylor Brown](https://aylorbrown.com)
