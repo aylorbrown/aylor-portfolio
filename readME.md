@@ -59,7 +59,11 @@ voila! The site is now mobile friendly!
 ![Aylor Mobile](assets/aylor-mobile.png)
 
 
+
+
 Me after conquering CSS media queries
+
+
 ![Solange dancing](https://media.giphy.com/media/hR2NxZlRDqEj6/giphy.gif)
 
 
