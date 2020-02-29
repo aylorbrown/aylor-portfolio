@@ -658,6 +658,10 @@ a.arena {
     div.gif img {
         padding: 50px; 
     }
+
+    div.gif-root img {
+        width: 98%;
+    }
     
     
 }
