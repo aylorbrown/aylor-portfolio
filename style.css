@@ -20,6 +20,7 @@ body {
     width: 100%;
 }
 
+
 header {
     position: fixed; 
     font-size: 14px;
@@ -134,7 +135,6 @@ div.right-half-2 {
 }
 
 div.right-half-2 h1 {
-    /* color: #dbdbdb; */
     color: black;
     padding: 60px;
 }
@@ -151,6 +151,24 @@ section.s4 {
 .img { 
     min-width: 100%; 
     min-height: 100%;
+}
+
+
+/* here  */
+section.coming-soon {
+    background-color: #fc715e;
+    min-height: 5vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+a.soon-wrap {
+    text-decoration: none;
+    color: #1c1aa9;
 }
 
 
@@ -264,6 +282,11 @@ div.dan-images {
 
 div.dan-images img {
     padding: 40px;
+}
+
+div.gif-root {
+    /* margin-top: 20px; */
+    padding: 50px;
 }
 
 /* about page */
