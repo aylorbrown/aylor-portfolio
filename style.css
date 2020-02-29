@@ -350,12 +350,23 @@ p.react {
     background-color: #fdf1d9;
 }
 
-p.node {
+p.reactnative {
     background-color: #efbab3;
+    font-size: 14px;
+    height: 42px;
+}
+
+p.redux {
+    background-color: #9cb29e;
+}
+
+
+p.node {
+    background-color: #fe892a;
 }
 
 p.sql {
-    background-color:#9cb29e;
+    background-color:#c3a55c;
 }
 
 p.html {
@@ -367,11 +378,11 @@ p.css {
 }
 
 p.git {
-    background-color: #fe892a;
+    background-color: #c4c5d4;
 }
 
 p.github {
-    background-color: #c3a55c;
+    background-color: #ff616b;
 }
 
 p.aws {
@@ -383,13 +394,11 @@ p.python {
 }
 
 p.photo {
-    
-    background-color: #c4c5d4;
-
+    background-color: #33c18b;
 }
 
 p.xd { 
-    background-color: #ff616b;
+    background-color: #ebd999;
 }
 
 p.sketch {
@@ -397,7 +406,7 @@ p.sketch {
 }
 
 p.shopify {
-    background-color: #ebd999;
+    background-color: #f9ecd5;
 }
 
 
@@ -453,7 +462,6 @@ a.arena {
         top: 50%;
         left: 10px;
         /* rotates text */
-        /* changes rotation POINT x axis*/
         transform-origin: 0 0;
         transform: rotate(-90deg) translate(-50%, 0);
     }
@@ -470,7 +478,6 @@ a.arena {
         transform: rotate(90deg) translate(50%, 0);
     }
 
-    
     section.container {
         display: flex;
         flex-direction: column;
@@ -484,9 +491,6 @@ a.arena {
     h1.aylor {
         font-size: 48px;
         width: 100%;
-        /* margin-left: 0px; */
-
-        /* padding: 20px; */
     }
 
     div.aylor-textbox {
@@ -536,6 +540,10 @@ a.arena {
         max-width: 100%;
     }
 
+    div.left-half-3 {
+        background-color: #E7C4A8;
+    }
+
     /* about page */
 
     section.container-about {
@@ -557,7 +565,6 @@ a.arena {
 
     div.left-half-about img {
         margin-top: 150px;
-        
         width: 50%;
     }
 
@@ -574,7 +581,8 @@ a.arena {
     }
 
     div.skills {
-        width: 100%;
+        max-width: 85%;
+        margin-left: 40px;
     }
 
     p.skillbox {
@@ -585,6 +593,11 @@ a.arena {
     }
 
     p.xd {
+        font-size: 12px;
+        height: 39px;
+    }
+
+    p.reactnative {
         font-size: 12px;
         height: 39px;
     }
@@ -633,8 +646,7 @@ a.arena {
         }
     
         div.left-half-about img {
-            margin-top: 200px;
-                
+            margin-top: 200px;    
         }
 
         div.right-half img {
