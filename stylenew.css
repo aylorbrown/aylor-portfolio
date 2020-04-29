@@ -193,6 +193,7 @@ a {
     .contact {
         align-items: center;
         justify-content: center;
+        position: relative;
     }
 
     .contactbox {
