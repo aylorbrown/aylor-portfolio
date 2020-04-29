@@ -191,7 +191,7 @@ a {
 
 
     .contact {
-        bottom: 40px;
+        bottom: 0px;
         margin-bottom: 40px;
         display: flex; 
         align-items: center;
