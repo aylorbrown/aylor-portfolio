@@ -191,9 +191,6 @@ a {
 
 
     .contact {
-        bottom: -90px;
-        /* margin-bottom: 0px; */
-        display: flex; 
         align-items: center;
         justify-content: center;
     }
