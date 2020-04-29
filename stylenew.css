@@ -191,8 +191,8 @@ a {
 
 
     .contact {
-        bottom: 0px;
-        margin-bottom: 0px;
+        bottom: -20px;
+        /* margin-bottom: 0px; */
         display: flex; 
         align-items: center;
         justify-content: center;
