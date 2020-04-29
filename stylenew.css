@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box; 
+}
+
+@font-face { 
+    font-family: "Young Serif"; 
+    src: url(type/YoungSerif-Regular.woff2), url(type/YoungSerif-Regular.woff);
+}
+
+body {
+    background-color: #e76345;
+    background-image: url("assets/web-background.jpg");
+    background-size: cover;
+
+    font-family: "Young Serif";
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+.aylor {
+    width: 60%;
+    margin: 100px 30px 0 68px;
+}
+
+.aylor-text {
+    font-size: 42px;
+    line-height: 1.4;
+}
+
+strong:hover {
+    position: relative;
+}
+
+strong:hover:after {
+    content: url(""); 
+    display: block;
+    position: absolute;
+    left: 123px;
+    top: 56px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    bottom: 20px;
+}
+
+.contactbox {
+    font-size: 18px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 20px;
+    width: 125px;
+    text-decoration: none;
+    cursor: pointer;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.email, .github, .linkedin {
+    background-color: transparent;
+}
+
+.email:hover, .github:hover, .linkedin:hover {
+    background-color: #e76345;
+    color: #F6ECEA;
+}
+
+
+
+/* right side  */
+
+.work {
+    width: 20%;
+    margin: 220px 68px 0 50px;
+}
+
+.header {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.work-example {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+
+.project-adopt:hover {
+    position: relative;
+}
+
+.project-adopt:hover:after {
+    content: url("assets/hover-dog.png"); 
+    display: block;
+    position: absolute;
+    right: -10px;
+    top: -100px;
+}
+
+.project-marta:hover {
+    position: relative;
+}
+
+.project-marta:hover:after {
+    content: url("assets/hover-marta.png"); 
+    display: block;
+    position: absolute;
+    right: -100px;
+    top: -100px;
+}
+
+.project-root:hover {
+    position: relative;
+}
+
+.project-root:hover:after {
+    content: url("assets/hover-yinyang.png"); 
+    display: block;
+    position: absolute;
+    right: -100px;
+    top: -75px;
+}
+
+.project-burger:hover {
+    position: relative;
+}
+
+.project-burger:hover:after {
+    content: url("assets/hover-burger.png"); 
+    display: block;
+    position: absolute;
+    right: -80px;
+    top: -50px;
+}
+
+.work-example p.project-language {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 799px) {
+
+    body {
+        background-position: center;
+        background-repeat: no-repeat, repeat;
+    }
+
+    .container  {
+        flex-direction: column;
+    }
+
+    .aylor {
+        width: 100%;
+        margin-top: 28px;
+        margin-left: 0;
+    }
+
+    .aylor-text {
+        font-size: 24px;
+        padding: 50px;
+        line-height: 1.9;
+    }
+
+    .icon-lisa {
+        width: 60px;
+        height: auto;
+    }
+
+    .icon-nyc {
+        padding: 2px;
+        width: 80px;
+        height: auto;
+    }
+
+
+    .contact {
+        bottom: 100px;
+        margin-left: 68px;
+        margin-bottom: 40px;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contactbox {
+        font-size: 16px;
+        background-color: transparent;
+        width: 100px;
+    }
+
+    .work {
+        width: 100%;
+        margin-top: 68px;
+        margin-left: 0;
+    }
+
+    .header {
+        font-size: 24px;
+        padding: 50px;
+        margin-bottom: 10px;
+    }
+
+    .work-example {
+        padding: 50px;
+    } 
+
+
+}
