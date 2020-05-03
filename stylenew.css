@@ -7,13 +7,30 @@
     src: url(type/YoungSerif-Regular.woff2), url(type/YoungSerif-Regular.woff);
 }
 
+@font-face {
+    font-family: "Amanda Pro";
+    src: url(type/AmandaPro-Bold.otf)
+}
+
+html {
+    cursor: url("assets/circlecursor.png"), auto;
+
+}
+
 body {
     background-color: #e76345;
     background-image: url("assets/web-background.jpg");
     background-size: cover;
 
-    font-family: "Young Serif";
+    font-family: "Futura PT", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 
+    cursor: url("assets/circlecursor.png"), auto;
+}
+
+a:hover {
+    cursor: url("assets/hover-circlecursor.png"), auto;
 }
 
 .container {
@@ -25,24 +42,56 @@ body {
 
 .aylor {
     width: 60%;
-    margin: 100px 30px 0 68px;
+    margin: 90px 30px 0 68px;
 }
 
 .aylor-text {
-    font-size: 42px;
+    font-size: 46px;
     line-height: 1.4;
 }
 
-strong:hover {
+strong.name {
+    font-family: "Amanda Pro";
+    font-size: 48px;
+    text-decoration: underline;
+}
+
+strong.name:hover {
     position: relative;
 }
 
-strong:hover:after {
-    content: url(""); 
+strong.name:hover:after {
+        content: url("assets/aylor-profile-1.png"); 
+        display: block;
+        position: absolute;
+        left: 50px;
+        top: -20px;
+    }
+
+strong.developer {
+    font-family: "Amanda Pro";
+    font-size: 48px;
+    text-decoration: underline;
+}
+
+strong.developer:hover {
+    position: relative;
+}
+
+
+strong.developer:hover:after {
+    content: url("assets/hover-lisa.png"); 
     display: block;
     position: absolute;
     left: 123px;
-    top: 56px;
+    top: -20px;
+}
+
+strong {
+    font-family: "Amanda Pro";
+    font-size: 46px;
+    text-decoration: underline;
+
 }
 
 .contact {
@@ -50,17 +99,19 @@ strong:hover:after {
     flex-direction: row;
 
     position: absolute;
-    bottom: 20px;
+    bottom: 100px;
 }
 
 .contactbox {
+    font-family: "Amanda Pro";
+
     font-size: 18px;
     background-color: transparent;
     color: black;
     border: 1px solid black;
-    padding: 10px;
+    padding: 8px;
     margin-left: 20px;
-    width: 125px;
+    width: 100px;
     text-decoration: none;
     cursor: pointer;
 
@@ -84,12 +135,13 @@ strong:hover:after {
 
 .work {
     width: 20%;
-    margin: 220px 68px 0 50px;
+    margin: 100px 68px 0 50px;
 }
 
 .header {
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-family: "Amanda Pro";
+    font-size: 42px;
+    margin-bottom: 30px;
 }
 
 a {
@@ -98,8 +150,10 @@ a {
 }
 
 .work-example {
-    font-size: 24px;
-    margin-bottom: 30px;
+    font-family: "Amanda Pro";
+
+    font-size: 36px;
+    margin-bottom: 25px;
 }
 
 
@@ -123,7 +177,7 @@ a {
     content: url("assets/hover-marta.png"); 
     display: block;
     position: absolute;
-    right: -100px;
+    left: 100px;
     top: -100px;
 }
 
@@ -173,7 +227,7 @@ a {
     }
 
     .aylor-text {
-        font-size: 24px;
+        font-size: 46px;
         padding: 50px;
         line-height: 1.9;
     }
@@ -211,7 +265,7 @@ a {
     }
 
     .header {
-        font-size: 24px;
+        font-size: 42px;
         padding: 50px;
         margin-bottom: 10px;
     }
